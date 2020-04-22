@@ -38,7 +38,7 @@ For each of the three created MA’s
 > | Full Synchronization     | Full Synchronization     |
 > | Delta Import (Stage Only)| Delta Import (Stage Only)|
 > | Delta Synchronization    | Delta Synchronization    |
-| Export                   | Export                   |
+> | Export                   | Export                   |
 
 3. Once all profiles are added click **OK**
 
