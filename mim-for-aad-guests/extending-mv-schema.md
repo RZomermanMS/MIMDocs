@@ -34,4 +34,4 @@ The Azure AD Guest account configuration will use an attributed called userPrinc
 ## Next: Install MIM portal
 As the rules will be created using the MIM portal, this will need to be installed. This includes:
 - [Installing SharePoint 2016](installing-sharepoint-2016.md)
-- [Installing Microsoft Identity Manager Portal](installing-mimportal.md)
+- [Installing Microsoft Identity Manager Portal](install-mim-portal.md)
