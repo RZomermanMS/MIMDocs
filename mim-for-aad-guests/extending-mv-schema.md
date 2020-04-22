@@ -25,6 +25,7 @@ The Azure AD Guest account configuration will use an attributed called userPrinc
 * Attribute name: **userPrincipalName**
 * Attribute Type: **String (Indexable)**
 * Indexed = **True**
+
  ![adding userPrincipalName attribute for person in metaverse](./images/4.metaVerseUserPrincipalName.png)
 
 6. Click **OK** to add
