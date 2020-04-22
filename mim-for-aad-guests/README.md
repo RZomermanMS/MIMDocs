@@ -59,6 +59,8 @@ Once your domain is in place and configured, prepare your corporate identity man
 
 ## Finally: Configure the synchonization rules
 Once you have set up the domain and server, you're ready to install the MIM components and configure them to sync with AD.
-
-
-
+- [Synchronization Rule 1: Import Guest User from Azure Active Directory](rule1-import-from-aad.md)
+- [Synchronization Rule 2: Import Active Directory Guest users](rule2-import-from-ad.md)
+- [Synchronization Rule 3: Create Guest User account in Active Directory](rule3-export-to-ad.md)
+- [Configuring Run Profiles](configuring-MA-runprofiles.md)
+- [Scheduling AutoRuns](schedule-sync-runs.md)
