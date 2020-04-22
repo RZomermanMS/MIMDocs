@@ -32,8 +32,8 @@ The following components are part of the total solution described in this step-b
 
 ![MIMB2BGuestKCDComponentsOverview](./images/1.Solution-Components.PNG)
 
--	An Azure AD with users and B2B guest users
--	A MIM server that synchronizes the B2B users to a local AD
+-	An Azure AD with users and AAD Guest users
+-	A MIM server that synchronizes the AAD Guest users to a local AD
 -	A local Active Directory
 -	A web server hosting a web page with Kerberos authentication enabled
 -	An Azure AD proxy connector server
