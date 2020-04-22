@@ -71,10 +71,11 @@ MIM works with Active Directory (AD), so follow these steps to configure your AD
 Once your domain is in place and configured, prepare your corporate identity management server. This includes setting up:
 
 - [Windows Server 2019](prepare-server-ws-2019.md)
-- [SQL Server 2016/2017](install-SQL-server.md)
-- [MIM Synchronization Service](install-mim-sync.md)
-- [SharePoint](prepare-server-sharepoint.md)
-- [MIM Service and Portal](install-mim-service-portal.md)
+- [SQL Server 2016/2017](Install-SQL-server.md)
+- [MIM Synchronization Service](install-mim-sync-service.md)
+- [MIM Extending MetaVerse](extending-mv-schema.md)
+- [SharePoint 2016](installing-sharepoint-2016.md)
+- [MIM Portal](install-mim-portal.md)
 - [The MIM synchronization MA](installing-MimMa.md)
 - [The Active Directory MA](installing-ADMA.md)
 - [The Graph API MA](installing-GraphAPIMA.md)
