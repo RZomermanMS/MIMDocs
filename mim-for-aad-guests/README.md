@@ -21,9 +21,11 @@ The initial scenario is external user AD account lifecycle management in combina
 
 ## Prerequisites
 To complete this tutorial, you will need:
-* a virtual machine for the domain controller
-* a virtual machine for the MIM server
+* a (virtual) machine for the domain controller
+* a (virtual) machine for the MIM server
 * an Azure Active Directory with P1 or P2 licenses
+
+Hardware requirements for the MIM Server can be found on: https://docs.microsoft.com/en-us/microsoft-identity-manager/microsoft-identity-manager-2016-supported-platforms
 
 ## Overview
 The following components are part of the total solution described in this step-by-step guide.
