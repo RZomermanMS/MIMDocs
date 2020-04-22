@@ -77,7 +77,7 @@ Once your domain is in place and configured, prepare your corporate identity man
 - [MIM Service and Portal](install-mim-service-portal.md)
 - [The MIM synchronization MA](installing-MimMa.md)
 - [The Active Directory MA](installing-ADMA.md)
-- [The Graph API MA](installing-AADMA.md)
+- [The Graph API MA](installing-GraphAPIMA.md)
 
 ## Finally: Configure the synchonization rules
 Once you have set up the domain and server, you're ready to install the MIM components and configure them to sync with AD.
