@@ -37,7 +37,7 @@ It is possible to automate the schedule for the Import of Guest accounts. There 
 
 A copy of the (already adjusted) script can be found in the github repository:
 
-- [runMimSync.ps1](runMIMSync.ps1)
+- [runMimSync.ps1](runMimSync.ps1)
 
 1. Download and save the file (for example in C:\Scripts) in a PowerShell format (for example runMIMSync.ps1)
 2. Adjust the script if required (when names of the Management agents are not "AADMA", "ADMA")
