@@ -90,6 +90,6 @@ In order to import the rules into the synchronization service, we need to run th
 ## Next: Installing Management Agents - Active Directory MA
 In total, 3 Management Agents will be installed:
 - [The Active Directory MA](installing-ADMA.md) – to create / manage the B2B accounts in the Active Directory Domain
-- [The Graph API MA](installing-AADMA.md) – to read the Guest account details in Azure AD
+- [The Graph API MA](installing-GraphAPIMA.md) – to read the Guest account details in Azure AD
 
 - [The MIM synchronization MA](installing-MimMa.md) – to import the rules into the synchronization service
