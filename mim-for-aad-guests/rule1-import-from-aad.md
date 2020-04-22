@@ -38,7 +38,7 @@ You should have completed the following steps already:
 5. On the _scope page_, set the following information
 > - Metaverse resource type: **Person**
 > - External System: **AADMA**
-> - External System Resource Type: b
+> - External System Resource Type: **user**
 
 ![Rule1: Configuring Scope options](./images/3.Rule1CreateSyncRuleScope.png)
 
