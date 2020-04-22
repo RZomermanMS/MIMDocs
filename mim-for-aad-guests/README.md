@@ -54,7 +54,7 @@ Join rules are based on aad:id<->mv:uid, meaning these attributes are used to de
 
 To be able to determine if an account has already been created on Active Directory, an import from AD into the metaverse will also be required. The equivalent attributes to the metaverse attributes are imported from AD and matched to the objects in the metaverse. The import join rule is based on objectSID (as this is unique).
 
-On export to AD, the attributes are mapped 1:1, with the exception of 3 initial outbound flow attributes: ad:dn, ad:userAccountControl, dn:unicodePWD. These are only activated on the initial creation of the object and are used to: 
+On export to AD, the attributes are mapped 1:1, with the exception of 3 initial outbound flow attributes: ad:dn, ad:userAccountControl, dn:unicodePwd. These are only activated on the initial creation of the object and are used to: 
 > - ad:dn -> set the distinguishedName of the object (and thus OU location)
 > - ad:userAccountControl -> enforce smartcard logon only (to avoid users logging in with username/password)
 > - ad:unicodePWD -> set a password for the user
