@@ -91,4 +91,4 @@ You should see exported objects and newly created users in AD
 ## Next: Scheduling autoruns 
 All the rules have been added now, and we can continue with the initial import of AAD Guest users into the metaverse and then exporting them to AD.
 
-- [Automate the synchronization runs](schedule-sync-runs.mdmd)
+- [Automate the synchronization runs](schedule-sync-runs.md)
