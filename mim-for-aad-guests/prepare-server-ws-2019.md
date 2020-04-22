@@ -55,4 +55,4 @@ NET LOCALGROUP ADMINISTRATORS <DOMAIN>\MIMInstall /ADD
 
 ## Next: Install SQL Server
 Once your server is configured, install Microsoft SQL 2016/2017 to support MIM:
-- [Microsoft SQL Installation](prepare-SQL-server.md)
+- [Microsoft SQL Installation](Install-SQL-server.md)
