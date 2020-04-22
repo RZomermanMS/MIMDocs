@@ -57,7 +57,7 @@ To be able to determine if an account has already been created on Active Directo
 On export to AD, the attributes are mapped 1:1, with the exception of 3 initial outbound flow attributes: ad:dn, ad:userAccountControl, dn:unicodePwd. These are only activated on the initial creation of the object and are used to: 
 > - ad:dn -> set the distinguishedName of the object (and thus OU location)
 > - ad:userAccountControl -> enforce smartcard logon only (to avoid users logging in with username/password)
-> - ad:unicodePWD -> set a password for the user
+> - ad:unicodePwd -> set a password for the user
 
 Once users are created, their objects can be used in Kerberos Constraint Delegation (with Protocol Transition) architectures. For example, by using the Azure AD Application Proxy, guest users can now login to IIS (Kerberos) based websites on-premises.
 
