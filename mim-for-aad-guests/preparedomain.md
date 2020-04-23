@@ -23,6 +23,14 @@ It is also possible to create the guest users in a trusted domain. In this case,
 !TIP: Using a separate forest could have advantages as selective authentication is available for the trust, allowing more control on the objects that guest users can authenticate to, but does incur more administrative overhead.
 More information: https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/ad-ds-deployment
 
+> [!NOTE]
+> This walkthrough uses sample names and values from a company called Contoso. Replace these with your own. For example:
+> - Domain name - **contoso**
+> - Service Account - **MIMMA**
+> - Install Account - **MIMINSTALL**
+> - SharePoint Pool Account - **MIMPOOL**
+> - Portal URL - **http://mim.contoso.com**
+
 ## Domain Controller
 Install a domain controller (if not already available), by installing Windows Server 2019 (or other version) and promote the server to be a domain controller. 
 More information: [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/ad-ds-deployment](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/ad-ds-deployment)
@@ -30,11 +38,13 @@ More information: [https://docs.microsoft.com/en-us/windows-server/identity/ad-d
 ## Creating Service Accounts
 To install Microsoft Identity Manager a number of service accounts and groups will be required. The first account (MIMINSTALL) will be used to install MIM (and portals) and can be disabled or removed afterwards. The MIMMA account is used for the MIM Management Agent to read and create user accounts in a dedicated OU. Finally, the MIMPool account will be used to run the SharePoint website hosting the MIM administrative portal.
 
-Run the following script and change the value for the `<password>`  on a member server with ADDS-Powershell CMDlets installed (or a domain controller)
-```
+Run the following script and change the value for the `<password>` on a member server with ADDS-Powershell CMDlets installed (or a domain controller)
+
+If choosing option 2 (Extension DLL) for installation, the MIMPool account and SPN registration are not required.
+
+```powershell
 $MimInstallPwd = ConvertTo-SecureString "<password>" –asplaintext –force
 $MIMMAPwd = ConvertTo-SecureString "<password>" –asplaintext –force
-$MIMPoolPwd = ConvertTo-SecureString "<password>" –asplaintext –force
 
 Import-Module ActiveDirectory
 
@@ -48,13 +58,15 @@ New-ADUser –SamAccountName MIMMA –name MIMMA
 Set-ADAccountPassword –identity MIMMA –NewPassword $MIMMAPwd
 Set-ADUser –identity MIMMA –Enabled 1 –PasswordNeverExpires 1
 
+ ```
+Run the following command to create the MIMPool account and set the SPN for integrated authentication to the portal website. This step is not required if choosing Option 2 (Extension DLL) for the installation:
+```powershell
+$MIMPoolPwd = ConvertTo-SecureString "<password>" –asplaintext –force
 #New user for the SharePoint website Pool Account
 New-ADUser –SamAccountName MIMpool –name MIMpool
 Set-ADAccountPassword –identity MIMPool –NewPassword $MIMPoolPwd
 Set-ADUser –identity MIMPool –Enabled 1 -PasswordNeverExpires 1
- ```
-Run the following command to set the SPN’s for the MIMPool service account:
-```
+
 setspn -S http/mim.contoso.com Contoso\mimpool
 ```
 # Domain Rights Delegation

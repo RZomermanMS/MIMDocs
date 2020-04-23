@@ -31,7 +31,7 @@ You should have completed the following steps already:
 - [Synchronization Rule 3: Create Guest User account in Active Directory](rule3-export-to-ad.md)
 
 ## Importing the created flow rules
-The rules that are created in earlier in the portal need to be imported into the Synchronization Service. For this, we run the import and synchronization on the FIM/MIM Management Agent: 
+The rules that are created in earlier in the portal need to be imported into the Synchronization Service. For this, we run the import and synchronization on the FIM/MIM Management Agent:
 
 1. Go to the Management Agents tab on the Synchronization Service Console
 2. Right click the MIMMA (FIM Service Management Agent) and click **Run**

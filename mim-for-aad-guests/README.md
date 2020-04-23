@@ -20,12 +20,14 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 The initial scenario is external user AD account lifecycle management in combination with Secure Hybrid Access. In this scenario, an organization has invited guests into their Azure AD directory, and wishes to give those guests access to on-premises Kerberos-based applications, via the Azure AD application proxy or other reverse-proxy mechanisms. The Azure AD application proxy requires each user to have their own Active Directory Domain Services (ADDS) account, for identification and delegation purposes.
 
 ## Prerequisites
+
 To complete this tutorial, you will need:
 * a virtual machine for the domain controller
 * a virtual machine for the MIM server
 * an Azure Active Directory with P1 or P2 licenses
 
 ## Overview
+
 The following components are part of the total solution described in this step-by-step guide.
 
 ![MIMB2BGuestKCDComponentsOverview](./images/1.Solution-Components.PNG)
@@ -38,8 +40,8 @@ The following components are part of the total solution described in this step-b
 > [!TIP]
 The MIM server installation is specifically for usage on a single server without MIM password portals and registration pages. This installation described here is suitable for non-highly available environments and low-object usage scenarios.
 
+## Architecture
 
-## Architecture 
 In order to allow Kerberos authentication to AD backend services an account will need to exist in AD. As guest users in Azure AD do not replicate back to Active Directory domains through Azure AD Connect, another connector will need to be created.
 After installation and configuration, MIM will read all “Guest” users from Azure Active Directory, import them into it’s metaverse and create users in Active Directory.
 For this the following attribute flows will be configured:
@@ -68,22 +70,30 @@ MIM works with Active Directory (AD), so follow these steps to configure your AD
 - [Domain setup](preparedomain.md)
 
 ## Next: Install Microsoft Identity Manager 2016 components
-Once your domain is in place and configured, prepare your corporate identity management server. This includes setting up:
+Once your domain is in place and configured, prepare your corporate identity management server. There are two versions for implementing the workflows in MIM. The first is using the MIM portal to setup the synchronization rules, the second uses an Extension DLL for the Synchronization Service and thus the portal is not required.
+The initial setup however, is the same for both:
 
 - [Windows Server 2019](prepare-server-ws-2019.md)
 - [SQL Server 2016/2017](Install-SQL-server.md)
 - [MIM Synchronization Service](install-mim-sync-service.md)
 - [MIM Extending MetaVerse](extending-mv-schema.md)
-- [SharePoint 2016](installing-sharepoint-2016.md)
-- [MIM Portal](install-mim-portal.md)
-- [The MIM synchronization MA](installing-MimMa.md)
 - [The Active Directory MA](installing-ADMA.md)
 - [The Graph API MA](installing-GraphAPIMA.md)
 
-## Finally: Configure the synchonization rules
-Once you have set up the domain and server, you're ready to install the MIM components and configure them to sync with AD.
+## (option 1) using the MIM Portal 
+- [The MIM synchronization MA](installing-MimMa.md)
+- [SharePoint 2016](installing-sharepoint-2016.md)
+- [MIM Portal](install-mim-portal.md)
 - [Synchronization Rule 1: Import Guest User from Azure Active Directory](rule1-import-from-aad.md)
 - [Synchronization Rule 2: Import Active Directory Guest users](rule2-import-from-ad.md)
 - [Synchronization Rule 3: Create Guest User account in Active Directory](rule3-export-to-ad.md)
 - [Configuring Run Profiles](configuring-MA-runprofiles.md)
+
+## (option 2) using the Extension DLL
+
+
+
+## Finally: Configure the synchonization rules
+Once you have set up the domain and server, you're ready to install the MIM components and configure them to sync with AD.
+
 - [Scheduling AutoRuns](schedule-sync-runs.md)

@@ -48,7 +48,7 @@ MIM consists of several components, the first component to install is the Synchr
 ![SyncService Save Encryption Key](./images/4.SyncServiceEncryptionKey.png)
 
 10. After the installation click **Finish**.
-11. If requested to log-off, do so and login again. 
+11. If requested to log-off, do so and login again.
 
 ## Next: Extend the metaverse schema
 The synchronization rules will use the userPrincipalName attribute which by default does not exist in the metaverse schema.

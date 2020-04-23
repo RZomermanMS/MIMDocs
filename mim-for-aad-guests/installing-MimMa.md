@@ -10,10 +10,10 @@ ms.subservice:
 ---
 
 
-# Setup MIM for AAD Guest Accounts - Installing MIM MA
+# Setup MIM for AAD Guest Accounts (option 1) - Installing MIM MA
 
 ## Prerequisits
-This chapter will install the FIM/MIM Management Agent to import the flow rules configured in the portal into the Synchronization Engine:
+This chapter will install the FIM/MIM Management Agent to import the flow rules configured in the portal into the Synchronization Engine. 
 
 You should have completed the following steps already:
 
@@ -26,7 +26,7 @@ You should have completed the following steps already:
 
 
 ## MIM Synchronization MA
-This chapter will install the FIM/MIM Service Management Agent
+This chapter will install the FIM/MIM Service Management Agent for use with the MIM portal.
 
 1. Open the Synchronization Service Manager through the start menu
 2. From the top bar, select **Management Agents** and then on the right-site action menu select **Create**
@@ -92,4 +92,4 @@ In total, 3 Management Agents will be installed:
 - [The Active Directory MA](installing-ADMA.md) – to create / manage the B2B accounts in the Active Directory Domain
 - [The Graph API MA](installing-GraphAPIMA.md) – to read the Guest account details in Azure AD
 
-- [The MIM synchronization MA](installing-MimMa.md) – to import the rules into the synchronization service
+> - [The MIM synchronization MA](installing-MimMa.md) – to import the rules into the synchronization service 

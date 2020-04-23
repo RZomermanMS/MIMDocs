@@ -10,7 +10,7 @@ ms.subservice:
 ---
 
 
-# Setup MIM for AAD Guest Accounts - Installing Active Directory MA
+# Setup MIM for AAD Guest Accounts (option 1) - Installing Active Directory MA
 
 ## Prerequisits
 This chapter will install the Active Directory Management Agent to import the AD (user) objects into the metaverse and to create new users in AD:
@@ -88,5 +88,5 @@ In total, 3 Management Agents will be installed:
 - [The Graph API MA](installing-GraphAPIMA.md) – to read the Guest account details in Azure AD
 
 
-- [The MIM synchronization MA](installing-MimMa.md) – to import the rules into the synchronization service
-- [The Active Directory MA](installing-ADMA.md) – to create / manage the B2B accounts in the Active Directory Domain
+> - [The MIM synchronization MA](installing-MimMa.md) – to import the rules into the synchronization service
+> - [The Active Directory MA](installing-ADMA.md) – to create / manage the B2B accounts in the Active Directory Domain

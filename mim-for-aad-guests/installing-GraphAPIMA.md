@@ -10,7 +10,7 @@ ms.subservice:
 ---
 
 
-# Setup MIM for AAD Guest Accounts - Installing GraphAPI MA
+# Setup MIM for AAD Guest Accounts (option 1) - Installing GraphAPI MA
 
 ## Prerequisits
 This chapter will install the GraphAPI Agent to import guest users from Azure AD:

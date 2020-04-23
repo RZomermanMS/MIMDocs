@@ -22,7 +22,7 @@ You should have completed the following steps already:
 - [MIM Synchronization Service](install-mim-sync-service.md)
 - [The MIM synchronization MA](installing-MimMa.md) 
 - [The Active Directory MA](installing-ADMA.md)
-- [The Graph API MA](installing-AADMA.md)
+- [The Graph API MA](nstalling-GraphAPIMA.md)
 
 ## Creating Run Profiles
 For each of the three created MA’s
