@@ -77,11 +77,12 @@ The initial setup however, is the same for both:
 - [SQL Server 2016/2017](Install-SQL-server.md)
 - [MIM Synchronization Service](install-mim-sync-service.md)
 - [MIM Extending MetaVerse](extending-mv-schema.md)
-- [The Active Directory MA](installing-ADMA.md)
-- [The Graph API MA](installing-GraphAPIMA.md)
+
 
 ## (option 1) using the MIM Portal 
 - [The MIM synchronization MA](installing-MimMa.md)
+- [The Active Directory MA](installing-ADMA.md)
+- [The Graph API MA](installing-GraphAPIMA.md)
 - [SharePoint 2016](installing-sharepoint-2016.md)
 - [MIM Portal](install-mim-portal.md)
 - [Synchronization Rule 1: Import Guest User from Azure Active Directory](rule1-import-from-aad.md)
@@ -90,8 +91,10 @@ The initial setup however, is the same for both:
 - [Configuring Run Profiles](configuring-MA-runprofiles.md)
 
 ## (option 2) using the Extension DLL
-
-
+- [The Extension DLL](extension-dll.md)
+- [The Active Directory MA with DLL](installing-ADMA-dll-version.md)
+- [The Graph API MA with DLL](installing-GraphAPIMA-dll.md)
+- [Configuring Run Profiles](configuring-MA-runprofiles-dll.md)
 
 ## Finally: Configure the synchonization rules
 Once you have set up the domain and server, you're ready to install the MIM components and configure them to sync with AD.
