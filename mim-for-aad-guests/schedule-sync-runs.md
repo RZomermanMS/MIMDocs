@@ -22,6 +22,8 @@ You should have completed the following steps already:
 - [SQL Server 2016/2017 setup](install-SQL-server.md)
 - [MIM Synchronization Service](install-mim-sync-service.md)
 - [The MIM synchronization MA](installing-MimMa.md) 
+
+* For option 1
 - [SharePoint](prepare-server-sharepoint.md)
 - [MIM Service and Portal](install-mim-service-portal.md)
 - [The Active Directory MA](installing-ADMA.md)
@@ -30,6 +32,12 @@ You should have completed the following steps already:
 - [Synchronization Rule 1: Import Guest User from Azure Active Directory](rule1-import-from-aad.md)
 - [Synchronization Rule 2: Import Active Directory Guest users](rule2-import-from-ad.md)
 - [Synchronization Rule 3: Create Guest User account in Active Directory](rule3-export-to-ad.md)
+
+* For option 2
+- [The Extension DLL](extension-dll.md)
+- [The Active Directory MA with DLL](installing-ADMA-dll-version.md)
+- [The Graph API MA with DLL](installing-GraphAPIMA-dll.md)
+- [Configuring Run Profiles](configuring-MA-runprofiles-dll.md)
 
 ## PowerShell script to run the MA's
 
